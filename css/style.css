@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
  :root
 {
-     --primary-color:#e706d5e7;
+    --primary-color:#fc06d3;
 }
 *{
     box-sizing: border-box;
@@ -89,10 +89,10 @@ img
     position: relative;
     top: 60px;
     height: 350px;
+    z-index: 999;
     width: 400px;
     z-index: 100px;
     padding: 40px;
-
 }
 .showcase-form .form-control
 {
@@ -111,19 +111,19 @@ img
 {
     outline: none;
 }
-.showcase::before
-/* .showcase::after */
+.showcase::before,
+.showcase::after
  {
-  content: '';
-  position: absolute;
-  height: 100px;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-  background: rgb(255, 255, 255);
-  transform: skewY(-3deg);
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
 }
 
 /* stats */
@@ -133,15 +133,28 @@ img
 }
 .stats-heading
 {
-    max-width: 500px;
-    margin: auto;
+    /* NOTE here the text should be squused and it should be within 600px and it should be centered */
 }
 .stats .grid h3
 {
     font-size: 35px;
+
 }
 .stats .grid p
 {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* CLI */
+.cli .grid
+{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.cli .grid > *:first-child
+{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
