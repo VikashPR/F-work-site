@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
  :root
 {
-     --primary-color:#04beede7;
+     --primary-color:#e706d5e7;
 }
 *{
     box-sizing: border-box;
@@ -131,4 +131,17 @@ img
 {
     padding-top: 100px;
 }
-
+.stats-heading
+{
+    max-width: 500px;
+    margin: auto;
+}
+.stats .grid h3
+{
+    font-size: 35px;
+}
+.stats .grid p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
