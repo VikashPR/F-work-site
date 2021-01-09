@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
  :root
 {
-    --primary-color:#065cfc;
+    /* --primary-color:#065cfc;
     --secondary-color:#0e3096;
     --dark-color:#050b69;
     --light-color:#f4f4f4;
     --success-color:#1bd853;
-    --error-color:#d9534f;
-    /* --primary-color:#fc06fc;
+    --error-color:#d9534f; */
+    --primary-color:#fc06fc;
     --secondary-color:#a80e87;
     --dark-color:#58124d;
     --light-color:#f4f4f4;
     --success-color:#1bd853;
-    --error-color:#d9534f; */
+    --error-color:#d9534f;
     /* /* --primary-color:#1fce19;
     --secondary-color:#29b616;
     --dark-color:#128b05;
@@ -112,6 +112,10 @@ pre
     grid-template-columns: 55% 45%;
     overflow: visible;
     gap: 30px;
+}
+.showcase-text
+{
+    animation: slideInFromLeft 1s ease-in;
 }
 .showcase-form
 {
@@ -280,6 +284,43 @@ pre
     margin: 0 10px;
 }
 
+/* Anmation  */
+@keyframes slideInFromLeft
+{
+    0%{
+        transform: teanslateX(-100%);
+    }
+    100%{
+        transform: teanslateX(-100%);
+    }
+}
+@keyframes slideInFromRight
+{
+    0%{
+        transform: teanslateX(100%);
+    }
+    100%{
+        transform: teanslateX(0);
+    }
+}
+@keyframes slideInFromTop
+{
+    0%{
+        transform: teanslateY(-100%);
+    }
+    100%{
+        transform: teanslateX(-100%);
+    }
+}
+@keyframes slideInFromRBottom
+{
+    0%{
+        transform: teanslateX(100%);
+    }
+    100%{
+        transform: teanslateX(0);
+    }
+}
  /*  *Tablets and under */
  @media(max-width:768px)
  {
