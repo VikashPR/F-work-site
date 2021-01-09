@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
  :root
 {
-    /* --primary-color:#065cfc;
+    --primary-color:#065cfc;
     --secondary-color:#0e3096;
-    --dark-color:#050b69;
+    --dark-color:#040d83;
     --light-color:#f4f4f4;
     --success-color:#1bd853;
-    --error-color:#d9534f; */
-    --primary-color:#fc06fc;
+    --error-color:#d9534f;
+    /* --primary-color:#fc06fc;
     --secondary-color:#a80e87;
     --dark-color:#58124d;
     --light-color:#f4f4f4;
     --success-color:#1bd853;
-    --error-color:#d9534f;
+    --error-color:#d9534f; */
     /* /* --primary-color:#1fce19;
     --secondary-color:#29b616;
     --dark-color:#128b05;
@@ -281,7 +281,24 @@ pre
 /* Footer  */
 .footer .social a
 {
-    margin: 0 10px;
+    margin: 0 20px;
+    margin-top: 4px;
+    padding: 8px;
+}
+.social a:hover
+{
+    opacity: 0.6;
+}
+.bg-dark a:hover{
+    transform: fa-3x;
+}
+.footer li{
+    padding: 8px;
+}
+.footer li:hover
+{
+    transition: transform 0.3s ease-out;
+    transform: translateX(20px);
 }
 
 /* Anmation  */
