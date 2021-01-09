@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
  :root
 {
-    --primary-color:#fc06d3;
+    /* --primary-color:#065cfc;
+    --secondary-color:#0e3096;
+    --dark-color:#050b69;
+    --light-color:#f4f4f4; */
+    --primary-color:#fc06fc;
+    --secondary-color:#a80e87;
+    --dark-color:#550648;
+    --light-color:#f4f4f4;
 }
 *{
     box-sizing: border-box;
@@ -158,3 +165,36 @@ img
     grid-row: 1 / span 2;
 }
 
+/* Cloud */
+.cloud .grid
+{
+    grid-template-columns: 4fr,3fr;
+}
+/* Laguages  */
+.languages .card
+{
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+.languages .card h4
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.languages .flex
+{
+    flex-wrap: wrap;
+}
+.languages .container
+{
+    max-width: 1400px;
+}
+.languages .card:hover
+{
+    transform: translateY(-15px);
+}
+.footer .social a
+{
+    margin: 0 10px;
+}
